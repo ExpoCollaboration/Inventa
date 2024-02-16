@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Mercado, Ronnel C.",
+        "strand": "Culinary Arts",
+        "id": "02000289493",
+        "role": "Leader of Culinary/Researcher/Designer",
+        "imageUrl": "./assets/img/Members/ronnel.jpg"
+    },
+    {
+        "name": "Fernando, Villanueva Jr T.",
+        "strand": "Information Technology",
+        "id": "02000295576",
+        "role": "Leader of IT/FrontEnd/BackEnd/Researcher",
+        "imageUrl": "./assets/img/Members/fernando.jpg"
+    },
+    {
+        "name": "Dimaculangan, Mark Vincent",
+        "strand": "Culinary Arts",
+        "id": "02000319652",
+        "role": "Researcher",
+        "imageUrl": "./assets/img/Members/vincent.jpg"
+    },
+    {
+        "name": "Jimenez, Jozh Ryle Fernando",
+        "strand": "Culinary Arts",
+        "id": "02000299706",
+        "role": "Researcher",
+        "imageUrl": "./assets/img/Members/Jozh.jpg"
+    },  
+    {   
+        "name": "Gestoso, James Andrei E.",
+        "strand": "Culinary Arts",
+        "id": "02000292573",
+        "role": "Researcher",
+        "imageUrl": "./assets/img/Members/james.jpg"
+    },
+    {   
+        "name": "Muñoz, Ludolfo Ma. Miguel L.",
+        "strand": "Culinary Arts",
+        "id": "02000315472",
+        "role": "Researcher",
+        "imageUrl": "./assets/img/Members/miguel.jpg"
+    },
+    {
+        "name": "Delgado, Argie P.",
+        "strand": "Information Technology",
+        "id": "02000287369",
+        "role": "FrontEnd/BackEnd/Researcher",
+        "imageUrl": "./assets/img/Members/argie.jpg"
+    },
+    {
+        "name": "Consigna, Ryan L.",
+        "strand": "Information Technology",
+        "id": "02000303132",
+        "role": "Researcher/Designer",
+        "imageUrl": "./assets/img/Members/ryan.jpg"
+    },
+    {
+        "name": "Fegalan, Christopher T.",
+        "strand": "Information Technology",
+        "id": "02000306245",
+        "role": "FrontEnd/BackEnd/Researcher",
+        "imageUrl": "./assets/img/Members/fegalan.jpg"
+    },
+    {   
+        "name": "Macasilhig, Khyle Myrvin P.",
+        "strand": "Information Technology",
+        "id": "02000307446",
+        "role": "FrontEnd/Researcher",
+        "imageUrl": "./assets/img/Members/macasilhig.jpg"
+        
+    },
+    {
+        "name": "Seguin, Jude Cedric M.",
+        "strand": "Information Technology",
+        "id": "02000300777",
+        "role": "FrontEnd/Researcher",
+        "imageUrl": "./assets/img/Members/jude.jpg"
+    }
+]

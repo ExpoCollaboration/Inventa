@@ -1,0 +1,268 @@
+/*---------------------------------- For Mobile Phone ---------------------------------------- */
+/* Media query for viewport width 950px or below */
+@media (max-width: 950px) {
+    
+    /*----------------------------- Responsive Navbar -----------------------------------------*/
+
+    header {
+        top: 0;
+        position: fixed;
+        background-color: #f1f1f1;
+        border-radius: 0 0 15px 15px;
+        height: fit-content;
+    }
+
+    #first-nav {
+        background: #f1f1f1;
+    }
+    
+    #link-logo {
+        background-color: none;
+        display: none;
+    }
+
+    #logo-name {
+        display: absolute;
+        float: inline-start;
+    }
+
+    #home {
+        min-height: 100vh;
+    }
+
+    #click-btn {
+        margin-bottom: 25px;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #f1f1f1;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }   
+    
+    .sidenav a {
+        text-decoration: none;
+        font-size: 25px;
+        color: #111;
+        display: block;
+        transition: 0.3s;
+        width: fit-content;
+    }
+    
+    .sidenav a:hover {
+        color: #111;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 45px;
+        margin-right: 12px;
+    }
+
+    .menu-button {
+        margin-top: 20px;
+        float: right;
+        background: none;
+        visibility: visible;
+        border: none;
+        color: black;
+        font-size: 25px;
+        cursor: pointer;
+        padding: auto 50 50 10;
+        margin-right: 12px;
+    }
+
+    #nav-ul{
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 12px 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    li { 
+        list-style-type: none;
+        display: block;
+    }
+
+    .login-btn {
+        margin-right: 0;
+    }
+
+    nav ul{
+        float: none;
+    }
+
+    ul {
+        display: none;
+    }
+    
+    
+    li { 
+        list-style-type: none;
+        display: block;
+    }
+
+    .login-btn {
+        margin-right: 0;
+    }
+
+    /*--------------------------------------- Home ---------------------------------------------*/
+    
+    #mainHome {
+        margin-top: 35px;
+    }
+
+    #home {
+        padding: 85px 0 0 10px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2-PhotoRoom.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /*------------------------------ About us Main/Sub Cards -----------------------------------*/
+    img {
+        border-radius: 3px;
+    }
+
+    .aboutUs-main-card-container {
+        overflow-x: scroll;
+    }
+
+    swiper-slide {
+        max-width: 1000px;
+    }
+
+    .main-card {
+        padding: 10px;
+    }
+
+    .main-card img {
+        min-width: 125px;
+        max-width: 125px;
+        min-height: 125px;
+        max-height: 125px;
+        border-radius: 100px;
+    }
+
+    /* ------------------------------------ FAQ ------------------------------------------- */
+
+    .faq-container {
+        padding-top: 15px;
+        max-width: 100%;
+        margin: 15px;
+    }
+
+    .selection-card-container {
+        display: grid;
+        grid-template-columns: none;
+        gap: 0;
+    }
+
+    /* ------------------------------------ Service ------------------------------------------- */
+
+    .service-container {
+        margin: 15px;
+    }
+
+    .service-card-container {
+        padding-bottom: 25px;
+        display: grid;
+        grid-template-columns: repeat(1 , auto); 
+        justify-content: center;
+    }
+    
+    .service-card img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    
+    /* ------------------------------------ Contact ------------------------------------------- */
+
+    #contact {
+        margin: 15px;
+    }
+
+    .session {
+        gap: 60px;
+        margin: 0;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .contact-message p  {
+        display: inline-block;
+        padding-bottom: 5px;
+        letter-spacing: 1px
+    }
+
+    /* ------------------------------------ Footer ------------------------------------------- */
+
+    .footer ul {
+        display: block;
+    }
+
+    .footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+
+}
+
+/*------------------------------Desktop mode for Mobile Phone-----------------------------------*/
+/* Media query for viewport width 1075px or below */
+@media (max-width: 1250px) {
+    
+    #home {
+        min-height: 100%;
+        padding-bottom: 15px;
+    }
+
+    #click-btn {
+        margin-bottom: 25px;
+    }
+
+    .faq-container {
+        padding-top: 15px;
+        max-width: 100%;
+        margin: 15px;
+    }
+
+    .selection-card-container {
+        display: grid;
+        grid-template-columns: none;
+        gap: 50px;
+    }
+}
+
+@media (min-width: 950px) {
+    
+    .session {
+        grid-template-columns: repeat(2, auto);
+        gap: 280px;
+    }
+
+    .left {
+        max-width: 150px;
+    }
+
+    .right {
+        max-width: 950px;
+    }
+
+    .contact-message {
+        width: 500px;
+    }    
+}
