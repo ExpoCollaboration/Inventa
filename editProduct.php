@@ -24,7 +24,7 @@ if(isset($_POST['submit'])) {
 
     $result = mysqli_query($connect , $sql);
     if($result) {
-        header("Location: assets/product.php");
+        header("Location: ./product.php");
     } else {
         echo "Failed to connect into database";
     }

@@ -7,13 +7,13 @@
     header {
         top: 0;
         position: fixed;
-        background-color: #f1f1f1;
+        background-color: #FFFFFF;
         border-radius: 0 0 15px 15px;
         height: fit-content;
     }
 
     #first-nav {
-        background: #f1f1f1;
+        background: #FFFFFF;
     }
     
     #link-logo {
@@ -41,7 +41,7 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #f1f1f1;
+        background-color: #FFFFFF;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -119,16 +119,16 @@
 
     /*--------------------------------------- Home ---------------------------------------------*/
     
-    #mainHome {
-        margin-top: 35px;
-    }
 
     #home {
-        padding: 85px 0 0 10px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2-PhotoRoom.jpg);
-        background-size: cover;
-        background-position: center;
+        padding: 100px 50px 0 50px;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.pinimg.com/736x/5b/3d/7d/5b3d7dd20748a0793dd96b95f84b4b86.jpg");
+        background-attachment: fixed;
         background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        height: fit-content
     }
 
     /*------------------------------ About us Main/Sub Cards -----------------------------------*/
@@ -188,6 +188,18 @@
         max-width: 150px;
         min-height: 200px;
         max-height: 200px;
+    }
+
+    #service h1 {
+        padding-left: 0;
+    }
+    
+    #service h5 {
+        padding-left: 0;
+    }
+
+    .service-card {
+        padding-left: 0;
     }
     
     /* ------------------------------------ Contact ------------------------------------------- */

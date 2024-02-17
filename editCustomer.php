@@ -29,7 +29,7 @@ if(isset($_POST['submit'])) {
 
     $result = mysqli_query($connect, $sql);
     if($result) {
-        header("Location: assets/tps.php");
+        header("Location: ./tps.php");
     } else {
         echo "Error updating record: " . mysqli_error($connect);
     }

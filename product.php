@@ -23,7 +23,7 @@ if(isset($_POST['submit'])) {
 
     $result = mysqli_query($connect , $sql);
     if($result) {
-        header("Location: assets/product.php");
+        header("Location: ./product.php");
         exit();
     } else {
         echo "Failed to add a product in the table";

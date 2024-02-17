@@ -24,7 +24,8 @@ header {
     width: 100%;
     height: fit-content;
     position: sticky;
-    background-color: #F1F1F1;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* ---------------------------- Nav Bar -----------------------------------*/
@@ -93,62 +94,54 @@ header li a:hover {
 /* ---------------------------- Home -----------------------------------*/
 
 #home {
-    padding: 200px 50px 0 50px;
+    padding: 0 50px 0 50px;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/background2-PhotoRoom.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.pinimg.com/736x/5b/3d/7d/5b3d7dd20748a0793dd96b95f84b4b86.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 550px;
     z-index: -1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container-hero {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #home h1 {
-    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 4.5rem;
     padding-bottom: 5px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-#home h5 {
-    text-align: center;
-    padding-bottom: 5px;
-    margin-top: 0;
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#home p {
-    text-align: center;
-    padding-bottom: 5px;
-    margin-top: 0;
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.center-container {
-    text-align: center;
+#home p {   
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .click-btn {
-    margin-top: 5px;
     color: white;
-    font-size: 1em;
+    font-size: 1.2em;
     height: 50px;
-    width: 150px;
-    border: 1px solid rgba(0, 0, 0, 0.6);  
-    border-radius: 10px; 
+    width: 200px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: 0.2s;
+    background-color: transparent;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
 .click-btn:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
 }
 
 /* ----------------------------------About Us----------------------------------------- */
@@ -248,11 +241,13 @@ swiper-slide {
 .service-card {
     padding: 15px;
     text-align: center;
+    box-shadow: 0 0 45px rgba(0,0,0,.08);
+    background-color: #FDFDFD;
 }
 
 .service-card .description {
     padding: 25px 0 0 0;
-    max-width: 100%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -265,7 +260,6 @@ swiper-slide {
     border-radius: 100%;
     object-fit: contain;
 }
-
 /* ---------------------------------- FAQ ----------------------------------------- */
 
 .faq-container {
@@ -549,4 +543,12 @@ footer hr {
 		transform: scale(0.95);
 		box-shadow: 0 0 0 0 #007bff;
 	}
+}
+
+hr.divider {
+    height: 0.5rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    color: #4A87C9;
+    opacity: 1;
 }

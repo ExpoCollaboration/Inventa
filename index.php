@@ -18,40 +18,90 @@
     </head>
     <body>
         <div id="blur-container">
-            <header>
-                <nav>
-                    <li><a href="#logo-icon" id="logo-name"><span>I</span>nventa</a></li>
-                    <button class="menu-button" id="toggle-menu" onclick="openNav()">&#9776;</button>
-                    <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <ul id="nav-ul">
-                            <li><a href="#home" id="mainHome">Home</a></li>
-                            <li><a href="#aboutUs">About us</a></li>
-                            <li><a href="#service">Services</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <main> 
+                <header>
+                    <nav>
+                        <li><a href="#logo-icon" id="logo-name"><span>I</span>nventa</a></li>
+                        <button class="menu-button" id="toggle-menu" onclick="openNav()">&#9776;</button>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <ul id="nav-ul">
+                                <li><a href="#home" id="mainHome">Home</a></li>
+                                <li><a href="#service">Service</a></li>
+                                <li><a href="#aboutUs">About us</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+            <main>
                 <!-- Home Page -->
                 <section class="fade-in show-once" id="home">
                 <a href="#home" title="home-link"></a>
-                    <h1 id="typer">Your Partner in Small Business Growth</h1>
-                    <p>
-                        Discover the power of A Inventa, the driving force behind small business success. At A Inventa, we're passionate about empowering entrepreneurs to achieve their full potential.
-                    </p>       
-                    <div style="margin-top: 10px;" class="center-container">
-                        <a href="./login.php" target="_self">
-                            <button class="click-btn">Get's Started</button>
-                        </a>
+                    <div class="container-hero">
+                        <h1 id="typer">Your Partner in Small <br> Business Growth</h1>
+                        <hr class="divider" />
+                        <p>
+                            Discover the power of A Inventa, the driving force behind small business success. At A Inventa, <br> we're passionate about empowering entrepreneurs to achieve their full potential.
+                        </p>       
+                        <div style="margin-top: 10px;" class="center-container">
+                            <a href="./login.php" target="_self">
+                                <button class="click-btn">Get's Started</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Service -->
+                <section class="fade-in show-once" id="service">
+                <a href="#service" title="service-link"></a>
+                    <h1>Our Service</h1>
+                    <h5>We provide customized solutions for websites, combining reliability and innovation to meet your unique needs</h5>
+                    <div class="service-container">
+                        <div class="service-card-container">
+                            <div class="service-card">
+                                <div class="circle">
+                                    <img src="assets/img/gif/Frontend.gif" alt="front-end logo" loading="lazy" />
+                                </div>
+                                <div class="description">
+                                    <h4>Front-end Coding</h4>
+                                    <p>
+                                        We are a capable and efficient team of front-end developers with skill in 
+                                        HTML, CSS, and JavaScript.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="circle">
+                                    <img src="assets/img/gif/Optimization.gif" alt="Optimization">
+                                </div>
+                                <div class="description">
+                                    <h4>Performance Optimization</h4>
+                                    <p>
+                                        We possess in-depth knowledge and skill in optimizing 
+                                        front-end code and assets to enhance website.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="circle">
+                                    <img src="assets/img/gif/Responsiveness.gif" alt="responsive logo" loading="lazy"/>
+                                </div>
+                                <div class="description">
+                                    <h4>Responsive Web Design</h4>
+                                    <p>
+                                        As a team, we excel in developing responsive web applications 
+                                        that adapt seamlessly to various screen sizes and devices. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <!-- About Us -->   
                 <section class="fade-in show-once" id="aboutUs">
                 <a href="#aboutUs" title="aboutUs-link"></a>
                     <h1>About Us</h1>
+                    <hr class="divider" />
                     <div class="aboutDescription">
                         <h6>
                             We're a group of G12 students from STI College Marikina, passionate about technology. We're creating a Transaction Data Processing System for culinary businesses to simplify daily tasks and help them succeed. Our goal is to provide an easy-to-use tool that improves operations and reduces waste. We're excited to apply our skills, gain real-world experience, and make a positive impact in the culinary world. Thanks for your support!
@@ -128,52 +178,6 @@
                                     </div>
                                 </swiper-slide>
                             </swiper-container>
-                        </div>
-                    </div>
-                </section>
-                <!-- Service -->
-                <section class="fade-in show-once" id="service">
-                <a href="#service" title="service-link"></a>
-                    <h1>Our Service</h1>
-                    <h5>We provide customized solutions for websites, combining reliability and innovation to meet your unique needs</h5>
-                    <div class="service-container">
-                        <div class="service-card-container">
-                            <div class="service-card">
-                                <div class="circle">
-                                    <img src="assets/img/gif/Frontend.gif" alt="front-end logo" loading="lazy" />
-                                </div>
-                                <div class="description">
-                                    <h4>Front-end Coding</h4>
-                                    <p>
-                                        We are a capable and efficient team of front-end developers with skill in 
-                                        HTML, CSS, and JavaScript.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="service-card">
-                                <div class="circle">
-                                    <img src="assets/img/gif/Optimization.gif" alt="Optimization">
-                                </div>
-                                <div class="description">
-                                    <h4>Performance Optimization</h4>
-                                    <p>
-                                        We possess in-depth knowledge and skill in optimizing 
-                                        front-end code and assets to enhance website.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="service-card">
-                                <div class="circle">
-                                    <img src="assets/img/gif/Responsiveness.gif" alt="responsive logo" loading="lazy"/>
-                                </div>
-                                <div class="description">
-                                    <h4>Responsive Web Design</h4>
-                                    <p>
-                                        As a team, we excel in developing responsive web applications 
-                                        that adapt seamlessly to various screen sizes and devices. 
-                                    </p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>

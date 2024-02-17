@@ -27,7 +27,7 @@ if(isset($_POST['submit'])) {
 
     $result = mysqli_query( $connect, $sql);
     if($result) {
-        header("Location: assets/tps.php");
+        header("Location: ./tps.php");
         exit();
     } else {
         echo "Failed to add a customer in the customer table";
