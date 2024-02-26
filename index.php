@@ -55,6 +55,7 @@
                 <section class="fade-in show-once" id="service">
                 <a href="#service" title="service-link"></a>
                     <h1>Our Service</h1>
+                    <hr class="divider" />
                     <h5>We provide customized solutions for websites, combining reliability and innovation to meet your unique needs</h5>
                     <div class="service-container">
                         <div class="service-card-container">
@@ -181,6 +182,55 @@
                         </div>
                     </div>
                 </section>
+                <!-- FAQ -->  
+                <section class="fade-in show-once" id="faq">
+                <a href="#faq" title="faq-link"></a>
+                    <h1>Frequently Asked Questions</h1>
+                    <hr class="divider" />
+                    <div class="container">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">
+                                What is the Inventa: Sales Monitoring System?
+                            </span><span class="icon" aria-hidden="true"></span></button>
+                                <div class="accordion-content">
+                                    <p>
+                                        Inventa has the capability to streamline JM2DG Culinary Solutions’ sales monitoring process, reduce the occurrence of human errors, inaccuracies, and transactional miscalculations. Additionally, the implementation of Inventa is envisioned to minimize their workload, and mitigate the inconveniences associated with analog sales monitoring.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">
+                                Is Inventa safe for data storage?
+                            </span><span class="icon" aria-hidden="true"></span></button>
+                                <div class="accordion-content">
+                                    <p>
+                                        The security of sales transaction data, given the role-based access feature and inclusion of user accounts, will still depend on how the application’s users use the app, either responsibly or maliciously. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">
+                                Is Inventa an open source project?
+                            </span><span class="icon" aria-hidden="true"></span></button>
+                                <div class="accordion-content">
+                                    <p>
+                                        Unfortunalety, The System is develop for JM2DG Culinary Solutions, The application will be unusable in instances of power outages, or computer issues when deployed to the user’s local machine. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="feedback-msg-head">Still have a question?</h2>
+                        <h5 class="feedback-msg-p">
+                            Could you please contact us via our Gmail account with the question you have? We would appreciate it if you could send us an email with the information.
+                        </h5>
+                        <div class="btn-holder">
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJftLhRBtwSDLhbmZqMfNMqTbBdcJkDrjtdWkQxsgcPzmpCgpxsbRpCKxJqndNjZBpKlmwL">
+                                <button class="contact-btn">Contact Us</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </main>
             
     
@@ -236,7 +286,7 @@
                         </h6>
                     </div>
                     <div class="footer-col">
-                        <h4>Programming Tools</h4>
+                        <h4>Technology Tools</h4>
                         <ul>
                             <li><a href="#"><i class="fa-brands fa-html5"></i> HTML</a></li>
                             <li><a href="#"><i class="fa-brands fa-css3-alt"></i> CSS</a></li>
@@ -306,5 +356,7 @@
                 emailjs.init("JsXPaZimgE6cIOmMS");
             })();
         </script>
+        <!-- Accordion -->
+        <script type="text/javascript" src="./assets/js/accordion.js"></script>
     </body>
 </html>
