@@ -33,6 +33,8 @@ header {
 #logo-name {
     position: absolute;
     font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
 }
 
 .closebtn {
@@ -61,6 +63,8 @@ header li a {
     padding: 12px 25px;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 header li a::after {
@@ -96,7 +100,7 @@ header li a:hover {
 #home {
     padding: 0 50px 0 50px;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.pinimg.com/736x/5b/3d/7d/5b3d7dd20748a0793dd96b95f84b4b86.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/background2-PhotoRoom.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,6 +148,60 @@ header li a:hover {
     transform: scale(1.05);
 }
 
+/* ---------------------------------- Services ----------------------------------------- */
+
+#service h1 {
+    color: black;
+    margin-top: 85px;
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+#service h5 {
+    color: gray;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-container {
+    margin: 50px;
+}
+
+.service-card-container {
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(3 , auto); 
+}
+
+.service-card {
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 45px rgba(0,0,0,.08);
+    background-color: #FDFDFD;
+}
+
+.service-card .description {
+    padding: 25px 0 0 0;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-card img {
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
 /* ----------------------------------About Us----------------------------------------- */
 
 #aboutUs h1 {
@@ -151,6 +209,8 @@ header li a:hover {
     font-size: 3em;
     justify-content: center;
     text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
 }
 
 .aboutUs-container {
@@ -209,120 +269,160 @@ swiper-slide {
     color: gray;
 }
 
-/* ---------------------------------- Services ----------------------------------------- */
+/* ---------------------------------- FAQ ----------------------------------------- */
 
-#service h1 {
+#faq h1 {
     color: black;
     margin-top: 85px;
     font-size: 3em;
     justify-content: center;
     text-align: center;
-}
-
-#service h5 {
-    color: gray;
-    margin-top: 20px;
-    text-align: center;
-    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
 }
 
-.service-container {
-    margin: 50px;
+.container {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
 }
 
-.service-card-container {
-    padding-bottom: 25px;
-    display: grid;
-    grid-template-columns: repeat(3 , auto); 
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.service-card {
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 0 45px rgba(0,0,0,.08);
-    background-color: #FDFDFD;
-}
-
-.service-card .description {
-    padding: 25px 0 0 0;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.service-card img {
-    min-width: 150px;
-    min-height: 150px;
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 100%;
-    object-fit: contain;
-}
-/* ---------------------------------- FAQ ----------------------------------------- */
-
-.faq-container {
-    padding-top: 15px;
-    max-width: 100%;
-    height: auto;
-    margin: 65px;
-}
-
-.faq-container h1 {
-    text-align: center;
-    text-transform: initial;
-}
-
-.selection-card-container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 50px;
-}
-
-.accordion {
-    border-radius: 5px;
-    margin: 2px;
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 16px;
-    width: 100%;
-    border: none;
+.accordion button {
+    position: relative;
+    display: block;
     text-align: left;
+    width: 100%;
+    padding: 1em 1em;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
     outline: none;
-    font-size: 12px;
-    transition: 0.4s;
 }
 
-.active, .accordion:hover {
-    background-color: #ccc;
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
 }
 
-.accordion:after { 
-    content: '\02795';
-    color: #777;
-    float: right;
-    font-size: 8px;
-    margin-left: 5px;
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
 }
 
-.active:after {
-    content: "\2796";
+.accordion .accordion-title {
+    padding: 1em 1.5em 1em 0;
 }
 
-.panel {
-    border-radius: 10px;
-    background-color: #E7F0FE;
+.accordion .icon {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: #03b5d2;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    font-size: 10px;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
 }
 
-.panel p {
-    margin-left: 10px;
-    text-align: left;
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 2em;
+}  
+
+.container .feedback-msg-head {
+    padding: 2em 0 1em 0;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+
+}
+
+.container .feedback-msg-p {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    
+}
+
+.btn-holder {
+    padding: 2em 0 0 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.contact-btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.2em;
+    height: 50px;
+    width: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
 /* ---------------------------------- Contact Us ----------------------------------------- */
